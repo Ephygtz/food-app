@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    >
+
+
+  <RelativeLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+
+      >
+
+
+    <ImageView
+        android:id="@+id/imgFood"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/food"
+        android:padding="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/food"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/imgFood"
+        android:background="@color/white"
+        android:padding="@dimen/dp_5"
+        >
+
+      <LinearLayout
+          android:id="@+id/ll_upper"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="vertical"
+          >
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:padding="@dimen/dp_3"
+            android:text="@string/pasta"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            app:font="@{`robo_medium`}"
+            />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="start"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingEnd="@dimen/dp_3"
+            android:paddingStart="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_2"
+            android:text="@string/loremipsum_is_simply_a_dummy_text_of_printing_and_typesetting_industry"
+            android:textColor="@color/d_gray"
+            android:textSize="@dimen/sp_12"
+            app:font="@{`robo_regular`}"
+            />
+
+      </LinearLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ll_upper"
+          android:layout_marginBottom="@dimen/dp_3"
+          android:layout_marginTop="@dimen/dp_3"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:paddingBottom="@dimen/dp_2"
+          android:paddingEnd="@dimen/dp_3"
+          android:paddingStart="@dimen/dp_3"
+          android:paddingTop="@dimen/dp_2"
+          >
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ll_quantity"
+            android:gravity="start"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_2"
+            android:text="@string/_20"
+            android:textColor="@color/home_header_color"
+            android:textSize="@dimen/sp_13"
+            app:font="@{`robo_regular`}"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_2"
+            >
+
+          <TextView
+              android:id="@+id/imgMinus"
+              android:layout_width="@dimen/dp_30"
+              android:layout_height="@dimen/dp_30"
+              android:layout_gravity="center_vertical|center_horizontal"
+              android:background="@drawable/round_text_remove_item"
+              android:contentDescription="@string/minus"
+              android:gravity="center_vertical|center_horizontal"
+              android:text="-"
+              android:textColor="#FF0000"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              />
+
+          <TextView
+              android:id="@+id/tvQuantity"
+              android:layout_width="@dimen/dp_30"
+              android:layout_height="@dimen/dp_30"
+              android:layout_gravity="center"
+              android:background="@drawable/quantity_no"
+              android:gravity="center"
+              android:padding="@dimen/dp_6"
+              android:text="@string/_0"
+              android:textAlignment="center"
+              android:textColor="@color/black"
+              android:textSize="@dimen/sp_12"
+              app:font="@{`robo_regular`}"
+              />
+
+
+          <TextView
+              android:id="@+id/imgPlus"
+              android:layout_width="@dimen/dp_30"
+              android:layout_height="@dimen/dp_30"
+              android:background="@drawable/round_text_add_item"
+              android:contentDescription="@string/plus"
+              android:layout_gravity="center_vertical|center_horizontal"
+              android:gravity="center_vertical|center_horizontal"
+              android:text="+"
+              android:textColor="#ff669900"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              />
+
+
+        </LinearLayout>
+      </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/rl_right"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_8"
+        android:background="@color/light_gray"
+        />
+
+  </RelativeLayout>
+
+</layout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_filter"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:gravity="center"
+        android:padding="@dimen/dp_5">
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@drawable/cancel"
+            android:paddingLeft="@dimen/sp_20" />
+
+
+        <ImageView
+            android:id="@+id/iv_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/done"
+            android:paddingLeft="@dimen/sp_20" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/food_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_50"
+                android:background="@drawable/round_edittext"
+                android:drawableRight="@drawable/right_arrow_filter"
+                android:gravity="center_vertical"
+                android:hint="Food Type"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_20"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/food_type"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:visibility="gone"></Spinner>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/res_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/round_edittext"
+            android:hint="Restaurant Name"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white" />
+        <!--android:drawableRight="@drawable/right_arrow_filter"-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/round_edittext"
+            android:drawableRight="@drawable/right_arrow_filter"
+            android:hint="Location"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="@dimen/dp_190"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/red_btn"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_18" />
+
+</LinearLayout>

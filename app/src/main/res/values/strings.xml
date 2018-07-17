@@ -1,0 +1,88 @@
+<resources>
+  <string name="app_name">QuickEATS</string>
+
+  <string name="debug_key">AIzaSyB2ndaNge2FJH-yiHsrnnDboheojI88Ix0</string>
+  <string name="release_key">AIzaSyDXuCHVhcpZDTG6-ml6vz7EmsOEu7bbKg0</string>
+  <string name="debug_map_key4">AIzaSyA_WGFU0BAUHvL2BKbOl0I4ZI9-c99Yofk</string>
+  <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Login&#45;&#45;&#45;&#45;&ndash;&gt;-->
+  <string name="gen_pass">Generated Password</string>
+  <string name="pass">Password</string>
+  <string name="f_pass">Forgot Password ?</string>
+  <string name="remember_me">Remember Me</string>
+  <string name="sign_in">SIGN IN</string>
+  <string name="dont_have_account">Don\'t have an Account? <b>Sign Up</b> </string>
+
+  <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;sign_up1-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+  <string name="agree_to_term">By signing up, you agree to
+ <b> Terms of Service \n </b> &amp; <b>Privacy Policy</b> </string>
+  <string name="sign_in1">Already have an Account? <b>LOGIN </b></string>
+
+  <string name="phone">Phone Number</string>
+  <string name="c_pass">Confirm New Password</string>
+
+
+  <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;otp&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+  <string name="enter_your_otp">Enter the 5 digit OTP  recieved on your \n registered mobile number</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="title_activity_search_map">Map</string>
+
+  <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Setting Activity&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+
+  <string name="account">Account</string>
+  <string name="priv">Privacy Settings</string>
+  <string name="edit_acc">Edit Account</string>
+  <string name="edit_pro">Edit Profile</string>
+  <string name="setting">Settings</string>
+  <string name="lin_acc">Linked Account</string>
+  <string name="push">Push Notification</string>
+  <string name="save_org">Save Original Photos</string>
+  <string name="support">Support</string>
+  <string name="helo_cent">Help Center</string>
+  <string name="report">Report a Problem</string>
+  <string name="about">About</string>
+  <string name="policy">Privacy Policy</string>
+  <string name="term">Terms</string>
+  <string name="open_source">Open Source Libraries</string>
+  <string name="clear_search">Clear Search History</string>
+  <string name="add_acc">Add Account</string>
+
+
+  <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;forgotpass-&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+  <string name="cancel">Cancel</string>
+  <string name="send">Send</string>
+  <string name="f_passs">Forgot Password</string>
+  <string name="email_conta">E-mail</string>
+  <string name="forgert_pas_text">Enter Registered Contact Number/E-mail \n Address and click  on send button</string>
+  <string name="logout">Logout</string>
+  <string name="review"> <u>32 reviews</u> </string>
+  <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Menu -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+  <string name="menu_text">LoremIpsum is simply dummy text of the printing and typesetting
+    industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s when an unknown printer took
+        a gallery of type and.
+    </string>
+  <string name="home">Home</string>
+  <string name="add_nto_cart">Cart</string>
+  <string name="no_data_found">No Data Found</string>
+  <string name="filter">Filter</string>
+  <string name="food">Food</string>
+  <string name="minus">Minus</string>
+  <string name="_0">0</string>
+  <string name="plus">Plus</string>
+  <string name="_20">$ 20</string>
+  <string name="loremipsum_is_simply_a_dummy_text_of_printing_and_typesetting_industry">LoremIpsum is simply a dummy text of printing and typesetting industry.It has been the industry standard dummy text.</string>
+  <string name="pasta">Pasta</string>
+  <string name="logo">Logo</string>
+  <string name="quaker_oat_so_simple_porridge">Quaker Oat So Simple Porridge</string>
+  <string name="_09">09</string>
+  <!--<string name="app_id">147132682554581</string>-->
+  <!--<string name="app_id">1609468389090342</string>-->
+  <string name="facebook_app_id">207718356481621</string>
+  <string name="fb_login_protocol_scheme">fb207718356481621</string>
+  <string name="mpesaprocess">"Please wait while your transaction \n is processing</string>
+
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/bg"
+      >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:contentDescription="@string/logo"
+          android:src="@drawable/login_logo"
+          />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+      <EditText
+          android:id="@+id/email"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/sp_45"
+          android:layout_marginLeft="@dimen/dp_20"
+          android:layout_marginRight="@dimen/dp_20"
+          android:layout_marginTop="@dimen/dp_10"
+          android:background="@drawable/editext_background"
+          android:drawableLeft="@drawable/email"
+          android:drawablePadding="@dimen/sp_10"
+          android:hint="E-mail Address"
+          android:inputType="textEmailAddress"
+          android:paddingLeft="@dimen/sp_15"
+          android:textColor="@android:color/white"
+          android:textColorHint="@color/white"
+          app:font="@{`robo_regular`}" />
+
+      <EditText
+          android:id="@+id/phone_no"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/sp_45"
+          android:layout_marginLeft="@dimen/dp_20"
+          android:layout_marginRight="@dimen/dp_20"
+          android:layout_marginTop="@dimen/dp_20"
+          android:background="@drawable/editext_background"
+          android:drawableLeft="@drawable/mobile_number"
+          android:drawablePadding="@dimen/sp_10"
+          android:inputType="phone"
+          android:maxLength="10"
+          android:hint="@string/phone"
+          android:paddingLeft="@dimen/sp_15"
+          android:textColor="@android:color/white"
+          android:textColorHint="@color/white"
+          app:font="@{`robo_regular`}" />
+
+
+      <EditText
+          android:id="@+id/pass"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/sp_45"
+          android:layout_marginLeft="@dimen/dp_20"
+          android:layout_marginRight="@dimen/dp_20"
+          android:layout_marginTop="@dimen/dp_20"
+          android:inputType="textPassword"
+          android:background="@drawable/editext_background"
+          android:drawableLeft="@drawable/password"
+          android:drawablePadding="@dimen/sp_10"
+          android:hint="@string/pass"
+          android:paddingLeft="@dimen/sp_15"
+          android:textColor="@android:color/white"
+          android:textColorHint="@color/white"
+          app:font="@{`robo_regular`}" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="50dp"
+          android:gravity="right"
+          >
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_signup"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="@dimen/dp_50"-->
+            <!--android:layout_marginEnd="@dimen/dp_30"-->
+            <!--android:layout_marginStart="@dimen/dp_30"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="@dimen/dp_10"-->
+            <!--android:text="Forgot password?"-->
+            <!--android:textColor="@color/white"-->
+            <!--app:font="@{`robo_regular`}"-->
+            <!--/>-->
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_30"
+            android:background="@drawable/red_btn"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:font="@{`robo_medium`}"
+            />
+
+
+      </LinearLayout>
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+</ScrollView>
+
+</layout>
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="@string/agree_to_term"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/sp_15"-->
+    <!--app:font="@{`robo_regular`}" />-->

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- <include layout="@layout/toolbar"/>-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar21"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/header"
+            android:theme="@style/AppTheme.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <!--    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+
+
+            <TextView
+                android:id="@+id/tv_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_18"
+                android:visibility="gone" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:text="Please select the payment mode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_300"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_mpesa"
+                android:layout_width="@dimen/dp_155"
+                android:layout_height="@dimen/dp_210"
+                app:cardCornerRadius="@dimen/dp_5"
+                app:cardElevation="2dp">
+                  <!--<LinearLayout-->
+                      <!--android:id="@+id/llmpesa"-->
+                      <!--android:layout_width="@dimen/dp_155"-->
+                      <!--android:layout_height="@dimen/dp_210"-->
+                      <!--android:gravity="center"-->
+                      <!--android:orientation="vertical"-->
+                      <!--android:background="@drawable/contact_shape"-->
+                      <!--android:elevation="20dp">-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/m_pesa" />
+
+
+                <TextView
+                    android:id="@+id/tv_mpesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_55"
+                    android:text="M-Pesa" />
+
+                <!--  </LinearLayout>-->
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview_creditcard"
+                android:layout_width="@dimen/dp_155"
+                android:layout_height="@dimen/dp_210"
+                android:layout_marginLeft="@dimen/dp_25"
+                app:cardCornerRadius="@dimen/dp_5"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/credit_card" />
+
+
+                <TextView
+                    android:id="@+id/tvCreditCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_55"
+                    android:text="Credit Card" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/checkbox_cash"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/dp_20"-->
+            <!--android:padding="@dimen/dp_10"-->
+            <!--android:text="Cash On Delivery"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/sp_15" />-->
+
+
+        <Button
+            android:id="@+id/btn_paymentmode"
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/red_btn"
+            android:text="Proceed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_18" />
+
+    </LinearLayout>
+</layout>

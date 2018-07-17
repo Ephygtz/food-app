@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:orientation="vertical">
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:background="@drawable/back" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Reset Password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+
+            </RelativeLayout>-->
+
+
+            <!--<EditText
+                android:id="@+id/generated_pass"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sp_45"
+                android:layout_marginTop="@dimen/dp_45"
+                android:background="@drawable/editext_background"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="@dimen/sp_10"
+                android:textColor="@android:color/white"
+                android:hint="@string/gen_pass"
+                android:inputType="number"
+                android:paddingLeft="@dimen/sp_15"
+                android:textColorHint="@color/white" />-->
+
+
+            <EditText
+                android:id="@+id/new_pass"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sp_45"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/editext_background"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/sp_10"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:hint="New Password"
+                android:paddingLeft="@dimen/sp_15"
+                android:textColorHint="@color/white" />
+
+
+            <EditText
+                android:id="@+id/confirm_pass"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sp_45"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/editext_background"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/sp_10"
+                android:textColor="@android:color/white"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:paddingLeft="@dimen/sp_15"
+                android:textColorHint="@color/white" />
+
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="@dimen/dp_190"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_130"
+                android:background="@drawable/red_btn"
+                android:text="DONE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_18"
+                app:font="@{`robo_medium`}"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

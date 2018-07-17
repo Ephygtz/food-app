@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:textSize="@dimen/sp_17"
+        android:textColor="@color/black"
+        android:text="Enter your delivery details"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/edittext_pro"
+                android:hint="Name"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:paddingLeft="@dimen/dp_18" />
+
+            <EditText
+                android:id="@+id/house_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/edittext_pro"
+                android:hint="Appartment/House No."
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp_18" />
+
+
+            <EditText
+                android:id="@+id/society"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/edittext_pro"
+                android:hint="Estate/Street"
+                android:paddingLeft="@dimen/dp_18" />
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/edittext_pro"
+                android:hint="City"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:paddingLeft="@dimen/dp_18" />
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/zipcode"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dp_40"-->
+                <!--android:layout_marginTop="@dimen/dp_20"-->
+                <!--android:background="@drawable/edittext_pro"-->
+                <!--android:hint="Zip Code"-->
+                <!--android:inputType="number"-->
+                <!--android:paddingLeft="@dimen/dp_18" />-->
+
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="wrap_content"
+                android:background="@drawable/red_btn"
+                android:text="DONE"
+                android:layout_marginTop="@dimen/dp_60"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/tv_filterName"
+            android:padding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/quaker_oat_so_simple_porridge"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black"
+            app:font="@{`robo_regular`}"
+            android:layout_toStartOf="@+id/tv_no"
+            />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:padding="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/_09"
+            app:font="@{`robo_regular`}"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+</layout>

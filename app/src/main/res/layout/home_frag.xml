@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+  <android.support.design.widget.CoordinatorLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:background="@null"
+        android:fitsSystemWindows="true"
+        >
+      <android.support.design.widget.CollapsingToolbarLayout
+          android:id="@+id/collapsingtoolbar"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_150"
+          android:fitsSystemWindows="true"
+          app:expandedTitleMarginStart="1dp"
+          app:layout_scrollFlags="scroll|exitUntilCollapsed"
+          >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/home_header_color"
+            >
+        </View>
+
+        <me.crosswall.lib.coverflow.core.PagerContainer
+            android:id="@+id/pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_170"
+            android:layout_marginTop="@dimen/dp_2"
+            >
+
+          <android.support.v4.view.ViewPager
+              android:layout_width="@dimen/dp_295"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:layout_marginBottom="@dimen/dp_3"
+              >
+          </android.support.v4.view.ViewPager>
+
+        </me.crosswall.lib.coverflow.core.PagerContainer>
+      </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/collapsingtoolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="16dp"-->
+        <!--app:backgroundTint="#ffffff"-->
+        <!--app:srcCompat="@drawable/ic_shopping_cart_black_24dp"-->
+
+        <!--/>-->
+
+  </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

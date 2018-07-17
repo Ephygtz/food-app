@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar">
+
+        </include>
+
+        <TextView
+            android:id="@+id/tv_noDataFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/dp_10"
+            android:text="@string/no_data_found"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_30"
+            android:visibility="gone" />
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="?actionBarSize">-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerV"
+                android:padding="@dimen/dp_2"
+                android:layout_marginTop="?actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_filterImg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:padding="@dimen/dp_2">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_filter"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_margin="@dimen/dp_15"-->
+                    <!--android:contentDescription="@string/filter"-->
+                    <!--android:elevation="@dimen/dp_5"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@drawable/filter"-->
+                    <!--android:translationZ="@dimen/dp_2"-->
+
+                    <!--/>-->
+
+
+                <!--<android.support.design.widget.FloatingActionButton-->
+
+                <!--android:id="@+id/fab_filter"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/filter"-->
+                <!--app:elevation="@dimen/dp_5"-->
+                <!--app:fabSize="normal"-->
+                <!--app:rippleColor="@color/black"-->
+                <!--app:useCompatPadding="true"-->
+                <!--android:scaleType="center"-->
+                <!--app:backgroundTint="@color/home_header_color"-->
+                <!---->
+                <!--/>-->
+
+
+            <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:id="@+id/rl_filterImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:padding="@dimen/dp_2">
+
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dp_15"
+                android:contentDescription="@string/filter"
+                android:elevation="@dimen/dp_5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/filter"
+                android:translationZ="@dimen/dp_2"
+
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

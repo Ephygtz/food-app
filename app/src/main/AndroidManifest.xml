@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wrx.quickeats">
+
+  <!--
+       The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+       Google Maps Android API v2, but you must specify either coarse or fine
+       location permissions for the 'MyLocation' functionality.
+    -->
+
+  <supports-screens
+      android:anyDensity="true"
+      android:largeScreens="true"
+      android:normalScreens="true"
+      android:resizeable="true"
+      android:smallScreens="true"
+      android:xlargeScreens="true"/>
+
+  <compatible-screens>
+
+    <!-- no small size screens -->
+
+
+    <!-- all normal size screens -->
+    <screen
+        android:screenDensity="ldpi"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="mdpi"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="hdpi"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="xhdpi"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="560"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="640"
+        android:screenSize="normal"/>
+
+    <!-- all large size screens -->
+    <screen
+        android:screenDensity="ldpi"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="mdpi"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="hdpi"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="xhdpi"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="560"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="640"
+        android:screenSize="large"/>
+
+    <!-- all xlarge size screens -->
+    <screen
+        android:screenDensity="ldpi"
+        android:screenSize="xlarge"/>
+    <screen
+        android:screenDensity="mdpi"
+        android:screenSize="xlarge"/>
+    <screen
+        android:screenDensity="hdpi"
+        android:screenSize="xlarge"/>
+    <screen
+        android:screenDensity="xhdpi"
+        android:screenSize="xlarge"/>
+    <screen
+        android:screenDensity="560"
+        android:screenSize="xlarge"/>
+    <screen
+        android:screenDensity="640"
+        android:screenSize="xlarge"/>
+
+    <!-- Special case for Nexus 7 -->
+    <screen
+        android:screenDensity="213"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="480"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="480"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="480"
+        android:screenSize="xlarge"/>
+
+    <!-- Special case for Samsung s8 -->
+    <screen
+        android:screenDensity="420"
+        android:screenSize="large"/>
+    <screen
+        android:screenDensity="420"
+        android:screenSize="normal"/>
+    <screen
+        android:screenDensity="420"
+        android:screenSize="xlarge"/>
+  </compatible-screens>
+
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+  <uses-feature android:name="android.hardware.camera.autofocus"/>
+  <uses-feature
+      android:name="android.hardware.camera"
+      android:required="true"/>
+
+  <application
+      android:name=".util.AppController"
+      android:allowBackup="true"
+      android:icon="@drawable/app_logo"
+      android:label="@string/app_name"
+      android:largeHeap="true"
+      android:roundIcon="@drawable/app_logo"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity
+        android:name=".activities.SplashActivity"
+        android:theme="@style/TranparentToolbar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".activities.SignUp"
+        android:theme="@style/TranparentToolbar"
+        android:windowSoftInputMode="stateVisible|adjustResize"/>
+    <activity
+        android:name=".activities.Otp"
+        android:theme="@style/TranparentToolbar"/>
+    <activity
+        android:name=".activities.MainActivity"
+        android:windowSoftInputMode="adjustPan"/>
+    <activity android:name=".activities.MapDrawerActivity"/>
+    <activity android:name=".activities.Description"/>
+    <activity android:name=".activities.FoodMenu"/>
+    <activity android:name=".activities.MyKart"/>
+    <activity android:name=".activities.UserAddress"/>
+    <activity android:name=".activities.PaymentMode"/>
+    <activity android:name=".activities.FacebookLogin"/>
+    <activity android:name=".activities.GoogleLogin"/>
+    <activity android:name=".activities.MapForPayment"/>
+    <activity android:name=".activities.Login"/>
+    <activity android:name=".activities.CreditCard"/>
+    <activity
+        android:name=".activities.PaymentBackground"
+        android:theme="@style/TranparentToolbar"
+        android:windowSoftInputMode="stateVisible|adjustResize"/>
+    <!--
+         The API key for Google Maps-based APIs is defined as a string resource.
+         (See the file "res/values/google_maps_api.xml").
+         Note that the API key is linked to the encryption key used to sign the APK.
+         You need a different API key for each encryption key, including the release key that is used to
+         sign the APK for publishing.
+         You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id"/>
+
+    <activity
+        android:name="com.facebook.FacebookActivity"
+        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    <activity
+        android:name="com.facebook.CustomTabActivity"
+        android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme="@string/fb_login_protocol_scheme"/>
+      </intent-filter>
+    </activity>
+
+    <!--
+         <meta-data
+         android:name="com.google.android.geo.API_KEY"
+         android:value="@string/release_key" />
+        -->
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/release_key"/>
+
+    <activity
+        android:name=".activities.SearchMap"
+        android:label="@string/title_activity_search_map"/>
+    <activity android:name=".activities.Settings"/>
+    <activity android:name=".activities.WebviewActivity"/>
+    <activity android:name=".activities.ChangePassword"/>
+    <activity android:name=".activities.ContactUs"/>
+    <activity android:name=".activities.Notification"/>
+    <activity android:name=".activities.MyFav"/>
+    <activity android:name=".activities.MapForOrderDispatch"/>
+    <activity android:name=".activities.MapRouteAct"/>
+    <activity android:name=".activities.TakeImage"/>
+    <activity
+        android:name=".util.TakePhoto"
+        android:hardwareAccelerated="false"/>
+    <activity
+        android:name=".activities.ForgotPass"
+        android:theme="@style/TranparentToolbar"/>
+    <activity android:name=".activities.SearchFilter"/>
+    <activity
+        android:name=".activities.ResetPass"
+        android:theme="@style/TranparentToolbar"/>
+
+    <service android:name=".fcm.MyFirebaseInstanceIDService">
+      <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+      </intent-filter>
+    </service>
+    <service android:name=".fcm.MyFirebaseMessagingService">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+
+    <meta-data
+        android:name="io.fabric.ApiKey"
+        android:value="44b5915daf7330d0de425de1d6bc82af9e2d242a"/>
+
+    <receiver
+        android:name=".activities.DeliveryBoytStatus"
+        android:process=":remote"/>
+
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.wrx.quickeats.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+      <meta-data
+          android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/file_paths"/>
+    </provider>
+
+    <!-- <provider -->
+    <!-- android:name="android.support.v4.content.FileProvider" -->
+    <!-- android:authorities="com.mobulous.restaurantapp.fileprovider" -->
+    <!-- android:exported="false" -->
+    <!-- android:grantUriPermissions="true" -->
+    <!-- tools:replace="android:authorities"> -->
+    <!-- <meta-data -->
+    <!-- android:name="android.support.FILE_PROVIDER_PATHS" -->
+    <!-- android:resource="@xml/file_paths" -->
+    <!-- tools:replace="android:resource"/> -->
+    <!-- </provider> -->
+
+    <activity android:name=".FoodDetails">
+    </activity>
+    <activity android:name=".activities.SecondSplashActivity">
+    </activity>
+  </application>
+
+</manifest>

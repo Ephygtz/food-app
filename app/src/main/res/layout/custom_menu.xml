@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/iv_notif_user"
+                    android:layout_width="@dimen/dp_75"
+                    android:layout_height="@dimen/dp_75"
+                    android:src="@drawable/imgae_notification" />
+
+
+                <TextView
+                    android:id="@+id/tv_notif_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_notif_user"
+                    android:paddingLeft="@dimen/sp_12"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:text="LoremIpsum"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <TextView
+                    android:id="@+id/tv_notif_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_notif_content"
+                    android:layout_marginTop="@dimen/sp_2"
+                    android:layout_toRightOf="@+id/iv_notif_user"
+                    android:paddingLeft="@dimen/sp_12"
+                    android:text="@string/menu_text"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_notif_time"
+                    android:layout_marginTop="@dimen/sp_2"
+                    android:layout_toRightOf="@+id/iv_notif_user"
+                    android:paddingLeft="@dimen/sp_12"
+                    android:text="$20"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/sp_10" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/noti_viewline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/gray">
+
+            </View>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

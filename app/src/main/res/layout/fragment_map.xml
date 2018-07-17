@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_35"
+        android:gravity="center">
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/map_edittext"-->
+        <!--&gt;-->
+
+
+        <!--<Button-->
+        <!--android:layout_width="@dimen/dp_22"-->
+        <!--android:layout_height="@dimen/dp_22"-->
+        <!--android:layout_marginLeft="@dimen/dp_15"-->
+        <!--android:background="@drawable/menu"/>-->
+
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_45"
+            android:drawableLeft="@drawable/search"
+            android:hint="Search"
+            android:paddingLeft="@dimen/dp_15"
+            android:background="@drawable/map_edittext"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:drawablePadding="@dimen/dp_10"
+            android:imeOptions="actionSearch"
+            android:imeActionLabel="Search"
+            android:singleLine="true" />
+
+
+        <!--</LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/map_drawer"
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="@dimen/dp_45"
+            android:src="@drawable/list_view"
+            android:padding="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:background="@drawable/map_edittext" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_onmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_5"
+        android:scrollbars="vertical"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:background="@color/white">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:text="36 Restaurant near you"
+        android:textColor="?colorAccent"
+        android:padding="@dimen/dp_5"
+        android:background="#69c4c4c4"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_90"
+        android:visibility="gone" />
+
+</RelativeLayout>

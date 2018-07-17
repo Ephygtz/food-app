@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wrx.quickeats.fragments.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <!-- <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_prof_pic" />-->
+        <ImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_220"
+            android:layout_marginTop="-1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_prof_pic" />
+
+
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="@dimen/sp_70"
+            android:layout_height="@dimen/sp_20"
+            android:layout_alignBottom="@+id/iv_profile_pic"
+            android:layout_alignParentEnd="true"
+            android:background="#5d050505"
+            android:layout_marginBottom="@dimen/sp_5"
+            android:drawableLeft="@drawable/edit"
+            android:drawablePadding="@dimen/sp_10"
+            android:padding="@dimen/dp_4"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_12">
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/edittext_pro"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingLeft="@dimen/dp_18" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/edittext_pro"
+                android:hint="email"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingLeft="@dimen/dp_18" />
+
+
+            <EditText
+                android:id="@+id/phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/edittext_pro"
+                android:hint="phone no"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingLeft="@dimen/dp_18" />
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/edittext_pro"
+                android:hint="Address"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:paddingLeft="@dimen/dp_18" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

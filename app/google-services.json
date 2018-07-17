@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "579841625114",
+    "firebase_url": "https://wrxquickeats-200807.firebaseio.com",
+    "project_id": "wrxquickeats-200807",
+    "storage_bucket": "wrxquickeats-200807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579841625114:android:7f2c31cbdae983a9",
+        "android_client_info": {
+          "package_name": "com.wrx.quickeats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579841625114-qqhpi2c7bglokga7rm2jpuhtnqbu8f1a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "579841625114-sjao7eeq1flfkjg1npnm1pbn456m73re.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wrx.quickeats",
+            "certificate_hash": "910a3700f56ae1d563dcf4e6c421583b2c1fee5c"
+          }
+        },
+        {
+          "client_id": "579841625114-ot4hfjol8rjsj2qjligfv9ur90a9t42b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6oPhc0gg0ksKZVt8KJnSMm4ZTRIk1nIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579841625114-qqhpi2c7bglokga7rm2jpuhtnqbu8f1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

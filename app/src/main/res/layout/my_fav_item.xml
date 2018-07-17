@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_5"
+            android:padding="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/iv_fav_img"
+                    android:layout_width="@dimen/dp_75"
+                    android:layout_height="@dimen/dp_75"
+                    android:background="@drawable/fav_image"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_fav_rname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sp_8"
+                    android:text="Hobees's Restrant"
+                    android:layout_toRightOf="@+id/iv_fav_img"
+                    android:paddingLeft="@dimen/sp_12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_fav_cousin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fav_rname"
+                    android:layout_marginTop="@dimen/sp_2"
+                    android:text="Chinese Indian"
+                    android:layout_toRightOf="@+id/iv_fav_img"
+                    android:paddingLeft="@dimen/sp_12"
+                    android:textSize="@dimen/sp_15"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/sp_12"
+                    android:id="@+id/star_id"
+                    android:layout_toRightOf="@+id/iv_fav_img"
+                    android:layout_below="@id/tv_fav_cousin"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        android:id="@+id/iv_first_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/filled_star_fav" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_second_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+
+                        android:background="@drawable/filled_star_fav" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_third_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/filled_star_fav" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_four_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/blank_fav" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_five_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/blank_fav" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(32 Reviews)"
+                    android:id="@+id/tv_review"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_below="@+id/tv_fav_cousin"
+                    android:layout_toRightOf="@+id/star_id"
+                    android:textColor="@color/gray"/>
+
+
+
+                <ImageView
+                    android:id="@+id/fav_unfav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fav_s"
+                    android:layout_below="@+id/tv_fav_rname"
+                    android:layout_alignParentEnd="true" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/gray"
+                android:id="@+id/fav_viewline">
+
+            </View>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

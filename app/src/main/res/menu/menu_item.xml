@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/tab_selector_home"></item>
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/tab_selector_search"></item>
+
+    <item
+        android:id="@+id/fav"
+        android:title="Favourites"
+        android:icon="@drawable/tab_selector_fav"
+        ></item>
+
+
+    <item
+        android:id="@+id/order"
+        android:title="Orders"
+        android:icon="@drawable/tab_select_order"
+        ></item>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/tab_seletor_pro"></item>
+
+</menu>

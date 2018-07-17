@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context="com.restaurantapp.User.activities.Mycart"
+      >
+
+
+    <!--<include-->
+    <!--android:id="@+id/layot"-->
+    <!--layout="@layout/toolbar" />-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/header"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        >
+
+
+      <TextView
+          android:id="@+id/tv_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:textColor="@color/white"
+          android:textSize="@dimen/sp_22"
+          android:visibility="gone"
+          app:font="@{`robo_medium`}"
+          />
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="end"
+          android:layout_marginRight="@dimen/dp_10"
+          android:gravity="center"
+          android:text="Add \nItems"
+          android:textColor="@color/white"
+          android:visibility="gone"
+          app:font="@{`robo_medium`}"
+          />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mycart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:backgroundTint="#EEEEEE"
+        android:padding="@dimen/sp_0"
+        android:layout_above="@+id/total"
+
+        >
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:text="Delivery Fee"
+          android:textColor="@color/black"
+          android:textSize="@dimen/sp_18"
+          android:textStyle="bold"
+
+          />
+
+      <TextView
+
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.2"
+          android:text="KES 100"
+          android:textColor="@color/colorAccent"
+          android:textSize="@dimen/sp_18"
+
+          />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rv_mycart"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:padding="@dimen/sp_10"
+        android:weightSum="3"
+        >
+
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:gravity="end"
+          android:text="TOTAL"
+          android:textColor="@color/black"
+          android:textSize="@dimen/sp_18"
+          android:textStyle="bold"
+          app:font="@{`robo_regular`}"
+          />
+
+
+      <TextView
+          android:id="@+id/grand_total"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="@dimen/sp_10"
+          android:layout_weight="1"
+          android:gravity="center_vertical"
+          android:text="$0"
+          android:textColor="@color/colorAccent"
+          android:textSize="@dimen/sp_18"
+          app:font="@{`robo_regular`}"
+          />
+
+
+      <Button
+          android:id="@+id/btn_continue"
+          android:layout_width="@dimen/dp_110"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/red_btn"
+          android:text="CONTINUE"
+          android:textColor="@color/white"
+          android:textSize="@dimen/sp_18"
+          app:font="@{`robo_medium`}"
+          />
+
+
+    </LinearLayout>
+
+  </RelativeLayout>
+</layout>
